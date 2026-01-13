@@ -80,6 +80,10 @@ the provided UI screenshot.
 
 ## Running the Project Locally
 
+### PostgreSQL
+
+First of all you need to create new database in PostgreSQL called: games
+
 ### Backend
 
 ```bash

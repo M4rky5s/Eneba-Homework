@@ -3,7 +3,10 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const corsOptions = {
-    origin: ["http://localhost:5173"],
+    origin: [
+        "http://localhost:5173",
+        "https://eneba-homework.vercel.app/",
+    ],
 };
 
 const app = express();

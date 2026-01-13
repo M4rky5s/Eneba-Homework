@@ -27,12 +27,14 @@ export default function App(){
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+
+    const API_URL= import.meta.env.VITE_API_URL;
     const search = query.trim();
     setLoading(true);
     const url = 
       search.length > 0
-        ? `http://localhost:3001/list?search=${encodeURIComponent(search)}`
-        : "http://localhost:3001/list";
+        ? `${API_URL}/list?search=${encodeURIComponent(search)}`
+        : `${API_URL}/list`;
 
     axios
       .get<OfferCard[]>(url)
