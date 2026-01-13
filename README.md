@@ -82,19 +82,32 @@ the provided UI screenshot.
 
 ### PostgreSQL
 
-First of all you need to create new database in PostgreSQL called: games
+First, create a new PostgreSQL database named `games`.
+
+Next, open PostgreSQL, right-click on the newly created database and select
+**Query Tool**. Paste the contents of the `schema.sql` file from the `db`
+folder and execute the script. After the schema is created, repeat the same
+process with the `seed.sql` file to populate the database with initial data.
+
+Once the database is set up, add your database credentials to the
+`backend/.env` file. For example:
+
+DB_HOST=localhost  
+DB_PORT=5432  
+DB_USER=postgres  
+DB_PASSWORD=postgres  
+DB_NAME=games
 
 ### Backend
 
 ```bash
 cd backend
 npm install -y
-npm install express
-node index.js
+npm start
 ```
 
 The backend will run on:
-http://localhost:3001
+http://localhost:3001/list
 
 ### Frontend
 
