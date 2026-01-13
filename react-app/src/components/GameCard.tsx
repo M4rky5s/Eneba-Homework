@@ -15,7 +15,10 @@ function GameCard({card} : GameCardProps){
             <div className="game-card-image-wrap">
                 {card.cashback_amount > 0 && (
                     <div className="game-card-cashback-container">
-                        <MdOutlineSettingsBackupRestore className="game-card-cashback-icon"/>
+                        <MdOutlineSettingsBackupRestore 
+                            className="game-card-cashback-icon"
+                            size={18}
+                        />
                         <div className="game-card-cashback-text">Cashback </div>
                     </div> 
                 )}
