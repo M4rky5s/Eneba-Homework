@@ -2,12 +2,6 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
-const corsOptions = {
-    origin: [
-        "http://localhost:5173",
-        "https://eneba-homework.vercel.app/",
-    ],
-};
 
 const app = express();
 const { Pool } = require('pg');
@@ -32,7 +26,7 @@ const pool = process.env.DATABASE_URL
         password: process.env.DB_PASSWORD,
 });
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 pool.connect((err, client, release) => {
     if(err) {
