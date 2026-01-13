@@ -1,0 +1,15 @@
+* {
+    font-family: "Stack Sans Headline", sans-serif;
+    background-color: rgb(70, 24, 172);
+}
+
+body {
+    margin: 0 400px 0 400px;
+}
+
+.parent-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    width: 100%;
+}

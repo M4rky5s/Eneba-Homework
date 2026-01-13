@@ -1,0 +1,78 @@
+.navbar{
+    height: 120px;
+    width: 100%;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+}
+
+.navbar-logo {
+    width: 180px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+}
+
+.navbar-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.navbar-flag {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 100%;
+}
+
+.navbar-locale {
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.locale-text {
+    font-weight: 200;
+}
+
+.navbar-locale:hover {
+    color: orange;
+}
+
+.navbar-iconBtn {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    font-size: 26px;
+    color: white;
+}
+
+.navbar-iconBtn:hover {
+    color: orange;
+}
+
+.profile-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
